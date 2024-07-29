@@ -1,0 +1,153 @@
+:root {
+  --blueAnses: #1e90ff;
+  --greenAnses: #00AC8C;
+  --orangeAnses: #FF9940
+}
+
+
+
+.brand-link {
+  background-color: var(--greenAnses);
+}
+
+.brand-text {
+  color: white;
+}
+
+.info_user {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: 0 !important;
+  padding: 5px 5px 5px 10px;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.sidebar {
+  background-color: var(--blueAnses);
+}
+
+.main-sidebar {
+  background-color: var(--blueAnses);
+}
+
+.content {
+    padding: 0 !important;
+}
+
+.content-wrapper>.content {
+    padding: 0 !important;
+}
+
+.nav-link.active {
+  background-color: var(--orangeAnses) !important;
+  color: white !important;
+}
+
+.nav-tabs.nav-link {
+  color: var(--greenAnses) !important;
+}
+
+.main-header {
+  color: var(--blueAnses);
+}
+
+.tab-content {
+  font-size: 11px !important;
+  color: var(--blueAnses) !important;
+  font-family: Helvetica !important;
+}
+
+/*
+.nav-pills .nav-link:not(.active):hover {
+  color: #df1c41 !important;
+}
+*/
+
+.form-control {
+  font-size: 11px !important;
+  height:37px !important;
+}
+
+/* alignement des boutons de chargement à droite */
+.dataTables_wrapper .dt-buttons {
+  float: none;
+  text-align: right;
+}
+
+/* supprimer les boutons de close & collapse des box*/
+.btn.btn-tool.pb-0.pt-0 {
+  display: none !important;
+}
+
+/* taille header card */
+.card-title {
+  font-size: 11px !important;
+}
+
+/* boutons */
+.btn-default {
+    background-color: #e9ecef;
+    color: var(--blueAnses)
+    font-size: 11px !important;
+}
+
+.btn-default:hover {
+    background-color: var(--orangeAnsesAnses);
+    color: white;
+}
+
+/* pickerInput */
+.filter-option-inner-inner {
+  font-size: 11px;
+}
+
+.dropdown-menu {
+  font-size: 11px;
+}
+
+/* supprimer msg erreur */
+.shiny-output-error { visibility: hidden; }
+
+/* disable switch mode */
+.custom-control {
+    display: none;
+}
+
+/* largeur des colonnes dans le inputPanel */
+
+.shiny-flow-layout>div {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 12px;
+  width: auto !important;
+}
+
+/* ----- Page de contact -----*/
+
+.div_contact {
+   position: relative;
+   z-index: 1;
+   font-size: 25px;
+}
+
+.div_contact:before {
+  background-color: var(--greenAnses);
+  background-image: url(eiffel2.PNG);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.4;
+  display: block;
+
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.div_vl {
+  border-left: 2px solid var(--ornageAnses);
+}

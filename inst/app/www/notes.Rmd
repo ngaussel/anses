@@ -1,0 +1,28 @@
+---
+title: "Notes anses"
+author: "NG"
+date: "2024-07-22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+![](https://ciqual.anses.fr/background.1ca92b973ed4b2d4369a.jpg){width="800" height="300"}
+
+## Utilisation
+
+Cette application constitue une aide à l'identification des aliments les plus adapatés certains régimes. L'utilisateur définit une liste de critères qu'il cherche à minimiser ou maximiser. Une fois ces critères définis, l'application score les aliments présents dans sa base. Un score de 100 correspond à un aliment parfaitement adapté et un score de zéro à un aliment à éviter.
+
+La consultation des résultats se fait sous forme graphique (onglet Graphique) ou via l'exploration directe du tableau de données (onglet Données).
+
+## Données
+
+La base de données utilisée est la [Base Ciqual](https://ciqual.anses.fr/# "Base Ciqual"){target="”_blank”"} maintenue par l'anses. Le site de l'anses est intéressant à visiter et contient beaucoup d'informations intéressantes mises à jour régulièrement.
+
+Le code source de l'application est disponible sur [Github](https://github.com/ngaussel/anses "Git"){target="”_blank”"}.
+
+Cette application n'a été ni revue ni approuvée par l'anses. Elle peut contenir des erreurs et ne saurait servir de guide fiable dans le cadre d'une utilisation médicale. Son objectif est uniquement informatif voire récréatif.
+
+Pour toute question, vous pouvez me contacter par mail (remplacer les mots par les symboles) : nicolas point gaussel at gmail point com.
