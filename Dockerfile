@@ -1,13 +1,14 @@
 FROM rocker/shiny:latest
 
-RUN apt-get update && apt-get install -y \
-    libcurl4-openssl-dev \
-    libssl-dev \
-    libxml2-dev
+# Installer remotes (utile pour lire DESCRIPTION)
+RUN R -e "install.packages('remotes', repos = 'https://cloud.r-project.org')"
 
+# Copier le code complet
 COPY . /app
 WORKDIR /app
 
-EXPOSE 3838
+# Installer les dépendances automatiquement
+RUN R -e "remotes::install_deps(dependencies = TRUE)"
 
+# Lancer l'app
 CMD ["R", "-e", "shiny::runApp('/app')"]
