@@ -11,4 +11,4 @@ WORKDIR /app
 RUN R -e "remotes::install_deps(dependencies = TRUE)"
 
 # Lancer l'app
-CMD ["R", "-e", "shiny::runApp('/app')"]
+CMD ["R", "-e", "shiny::runApp('/app', host = '0.0.0.0', port = 3838)"]
