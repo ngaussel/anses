@@ -32,19 +32,6 @@ scorifyGamma <- function(x,shape=1){
 }
 
 
-#' scorifyNonPara
-#' Transforme une serie de nombre en score de façon non paramétrique
-#'
-#' @param x les valeurs initiales
-#'
-#' @return les scores
-#' @export
-#'
-scorifyUni <- function(x){
-  ecdf(x)(x)
-}
-
-
 #' scorifyUni
 #' Transforme une serie de nombre de type uniforme en score
 #'

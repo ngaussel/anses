@@ -113,7 +113,7 @@ ansesPalette <- c("#000091",
 
 
 # Liste des critères
-criteresList <- data_G1 |>
+criteresList <- data_clean |>
   select(ends_with("score")) |>
   names() |>
   str_remove(pattern = "_score")

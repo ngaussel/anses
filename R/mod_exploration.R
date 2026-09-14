@@ -26,6 +26,22 @@ mod_exploration_ui <- function(id) {
         }
       ")
     ),
+    # Empeche de desélectionner le dernier critère choisi dans le pickerInput
+    tags$script(HTML(sprintf("
+      $(document).ready(function(){
+        $('#%1$s').on('show.bs.select', function(){
+          $('a[role=option]').on('click', function(e){
+            var selections = $('#%1$s').val();
+            if (selections.length === 1 && $(this).hasClass('selected')) {
+              e.stopImmediatePropagation();
+            }
+          });
+        }).on('hide.bs.select', function(){
+          $('a[role=option]').off('click');
+        });
+      });
+    ", ns("criteres"))))
+    ,
     titlePanel("Critères de choix"),
     br(),
     fluidRow(
@@ -51,7 +67,7 @@ mod_exploration_ui <- function(id) {
     fluidRow(
       column(
         3,
-        tags$strong("Choix des informations : ")
+        tags$strong("Contenu du tooltip : ")
       ),
       column(
         3,
@@ -225,6 +241,7 @@ mod_exploration_server <- function(id) {
         mutate(
           hover = hover
         )
+
 
       zz <- dd |>
         plot_ly(

@@ -2,11 +2,9 @@
 % Please edit documentation in R/helper.R
 \name{scorifyUni}
 \alias{scorifyUni}
-\title{scorifyNonPara
-Transforme une serie de nombre en score de façon non paramétrique}
+\title{scorifyUni
+Transforme une serie de nombre de type uniforme en score}
 \usage{
-scorifyUni(x)
-
 scorifyUni(x)
 }
 \arguments{
@@ -14,13 +12,8 @@ scorifyUni(x)
 }
 \value{
 les scores
-
-les scores
 }
 \description{
-scorifyNonPara
-Transforme une serie de nombre en score de façon non paramétrique
-
 scorifyUni
 Transforme une serie de nombre de type uniforme en score
 }

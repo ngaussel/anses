@@ -9,42 +9,60 @@ export(scorifyUni)
 import(dplyr)
 import(shiny)
 importFrom(assertthat,assert_that)
-importFrom(bs4Dash,bs4DashBody)
-importFrom(bs4Dash,bs4DashNavbar)
-importFrom(bs4Dash,bs4DashPage)
-importFrom(bs4Dash,bs4DashSidebar)
-importFrom(bs4Dash,bs4SidebarMenu)
-importFrom(bs4Dash,bs4SidebarMenuItem)
-importFrom(bs4Dash,bs4TabItem)
-importFrom(bs4Dash,bs4TabItems)
-importFrom(dplyr,across)
-importFrom(dplyr,case_when)
-importFrom(dplyr,ends_with)
-importFrom(dplyr,left_join)
-importFrom(dplyr,mutate)
-importFrom(dplyr,select)
-importFrom(golem,activate_js)
-importFrom(golem,add_resource_path)
-importFrom(golem,bundle_resources)
-importFrom(golem,favicon)
-importFrom(golem,with_golem_options)
-importFrom(plotly,plot_ly)
-importFrom(plotly,plotlyOutput)
-importFrom(plotly,renderPlotly)
-importFrom(purrr,map)
-importFrom(purrr,reduce)
-importFrom(shiny,NS)
-importFrom(shiny,shinyApp)
-importFrom(shiny,tagList)
-importFrom(shinyWidgets,pickerInput)
-importFrom(shinyWidgets,pickerOptions)
-importFrom(shinyWidgets,prettyRadioButtons)
-importFrom(shinyWidgets,switchInput)
-importFrom(stats,pgamma)
-importFrom(stats,sd)
-importFrom(stats,var)
-importFrom(stringr,regex)
-importFrom(stringr,str_detect)
-importFrom(stringr,str_extract)
-importFrom(stringr,str_remove)
-importFrom(stringr,str_remove_all)
+importFrom(bs4Dash,
+  bs4DashBody,
+  bs4DashNavbar,
+  bs4DashPage,
+  bs4DashSidebar,
+  bs4SidebarMenu,
+  bs4SidebarMenuItem,
+  bs4TabItem,
+  bs4TabItems
+)
+importFrom(dplyr,
+  across,
+  case_when,
+  ends_with,
+  left_join,
+  mutate,
+  select
+)
+importFrom(golem,
+  activate_js,
+  add_resource_path,
+  bundle_resources,
+  favicon,
+  with_golem_options
+)
+importFrom(plotly,
+  plot_ly,
+  plotlyOutput,
+  renderPlotly
+)
+importFrom(purrr,
+  map,
+  reduce
+)
+importFrom(shiny,
+  NS,
+  shinyApp,
+  tagList
+)
+importFrom(shinyWidgets,
+  pickerInput,
+  pickerOptions,
+  prettyRadioButtons,
+  switchInput
+)
+importFrom(stats,
+  pgamma,
+  sd,
+  var
+)
+importFrom(stringr,
+  regex,
+  str_detect,
+  str_extract,
+  str_remove,
+  str_remove_all
+)
